@@ -1,0 +1,111 @@
+.adobe-container {
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid #0094de;
+    border-bottom: 1px solid #0094de;
+    padding: 10px;
+  }
+  .green-button {
+    background-color: #5bd808;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  main {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    section {
+      @media screen and (min-width: 1200px) {
+        flex: 70%;
+      }
+      display: flex;
+      flex-wrap: wrap;
+      @media screen and (max-width: 1200px) {
+        justify-content: center;
+      }
+      itmes {
+        // padding: 10px;
+        border: 1px solid #0094de;
+        @media screen and (min-width: 1200px) {
+          width: calc((100% / 3) - 50px);
+        }
+
+        margin: 20px;
+        thumbnail-image {
+          display: flex;
+          flex-wrap: wrap;
+
+          .discount {
+            background-color: #5bd808;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            max-height: 50px;
+          }
+        }
+        img {
+          width: 220px;
+          height: 220px;
+          max-width: 100%;
+          justify-content: center;
+        }
+      }
+      .desc {
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: lightgray;
+        p {
+          margin: 5px 0px;
+        }
+        price {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .btn-add {
+          padding: 5px;
+          border: 1px solid #0094de;
+          border-radius: 5px;
+          // color: white;
+          font-weight: bold;
+        }
+      }
+    }
+    cart {
+      width: 100%;
+      @media screen and (min-width: 1200px) {
+        flex: 20%;
+      }
+      font-family: Arial;
+      font-size: 17px;
+      box-sizing: border-box;
+      background-color: #f2f2f2;
+      padding: 5px 20px 15px 20px;
+      border: 1px solid lightgrey;
+      border-radius: 3px;
+      margin: 20px;
+      h4 {
+        font-family: Arial;
+        font-size: 17px;
+        box-sizing: border-box;
+      }
+      a {
+        color: #2196f3;
+      }
+      hr {
+        border: 1px solid lightgrey;
+      }
+      span.price {
+        float: right;
+        color: grey;
+      }
+    }
+  }
+}
